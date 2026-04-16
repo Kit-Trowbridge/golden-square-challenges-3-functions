@@ -5,4 +5,4 @@ def make_snippet(string):
     return string
 
 def count_words(string):
-    return string.split(" ")
+    return len(string.split())
