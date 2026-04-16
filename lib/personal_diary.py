@@ -9,4 +9,5 @@ def count_words(string):
     return len(string.split())
 
 def make_snippet(string):
-    return string
+    if count_words(string) <= 5:
+        return string
