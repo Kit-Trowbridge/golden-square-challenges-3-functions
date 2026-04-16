@@ -14,3 +14,9 @@ def test_make_snippet_returns_string_when_given_5_word_string():
 def test_make_snippet_returns_shortened_string():
     result = make_snippet("The quick brown fox jumps over the lazy dog.")
     assert result == "The quick brown fox jumps..."
+
+def test_make_snippet_returns_shortened_string():
+    result = make_snippet("The quick brown fox jumps over the lazy dog.")
+    assert result == "The quick brown fox jumps..."
+
+# Do I do a separate test for the "..."? Not because we never want the function just shortening without adding
