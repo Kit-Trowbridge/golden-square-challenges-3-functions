@@ -16,3 +16,7 @@ def test_count_words_returns_2_when_string_is_2_words():
 def test_make_snippet_returns_string_when_given_1_word_string():
     result = make_snippet("Hello")
     assert result == "Hello"
+
+def test_make_snippet_returns_string_when_given_5_word_string():
+    result = make_snippet("The quick brown fox jumps")
+    assert result == "The quick brown fox jumps"

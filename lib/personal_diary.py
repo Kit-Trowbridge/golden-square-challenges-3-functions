@@ -9,4 +9,4 @@ def count_words(string):
     return len(string.split())
 
 def make_snippet(string):
-    return "Hello"
+    return string
