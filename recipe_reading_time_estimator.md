@@ -13,19 +13,22 @@ _Include the name of the function, its parameters, return value, and side effect
 ```python
 # EXAMPLE
 
-def extract_uppercase(mixed_words):
-    """Extracts uppercase words from a string
+def estimate_reading_time(text):
+    """Determines the number of minutes it will take a user to read a text, with the formula of 200 words per minute.
 
     Parameters: (list all parameters and their types)
-        mixed_words: a string containing words (e.g. "hello WORLD")
+        text: a string containing words (e.g. "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct to Heaven, we were all going direct the other way--in short, the period was so far like the present period, that some of its noisiest authorities insisted on its being received, for good or for evil, in the superlative degree of comparison only.")
 
     Returns: (state the return value and its type)
-        a list of strings, each one a word (e.g. ["WORLD"])
+        a string containing the estimated number of minutes
+        inside the function, an integer representing the number of minutes will be interpolated into an f-string
+        (e.g. "This will take you approximately 5 minutes")
 
-    Side effects: (state any side effects)
+    Side effects:
         This function doesn't print anything or have any other side-effects
     """
-    pass # Test-driving means _not_ writing any code here yet.
+    pass 
+
 ```
 
 ## 3. Create Examples as Tests
@@ -36,7 +39,7 @@ _Make a list of examples of what the function will take and return._
 # EXAMPLE
 
 """
-Given a lower and an uppercase word
+Given an empty string
 It returns a list with the uppercase word
 """
 extract_uppercase("hello WORLD") => ["WORLD"]
