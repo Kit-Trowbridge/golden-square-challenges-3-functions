@@ -20,9 +20,9 @@ def estimate_reading_time(text):
         text: a string containing words (e.g. "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct to Heaven, we were all going direct the other way--in short, the period was so far like the present period, that some of its noisiest authorities insisted on its being received, for good or for evil, in the superlative degree of comparison only.")
 
     Returns: (state the return value and its type)
-        a string containing the estimated number of minutes
-        inside the function, an integer representing the number of minutes will be interpolated into an f-string
-        (e.g. "This will take you approximately 5 minutes")
+        an integer representing the estimated number of minutes it will take the user
+        to read the given text
+        (e.g. 5)
 
     Side effects:
         This function doesn't print anything or have any other side-effects
@@ -40,45 +40,27 @@ _Make a list of examples of what the function will take and return._
 
 """
 Given an empty string
-It returns a list with the uppercase word
+It returns 0
 """
-extract_uppercase("hello WORLD") => ["WORLD"]
+estimate_reading_time("") => 0
 
 """
-Given two uppercase words
-It returns a list with both words
+Given a string of exactly 200 words
+It returns 1
 """
-extract_uppercase("HELLO WORLD") => ["HELLO", "WORLD"]
+estimate_reading_time("-->string containing 200 words with no punctuation<--") => 1
 
 """
-Given two lowercase words
-It returns an empty list
+Given a string of exactly 400 words
+It returns 2
 """
-extract_uppercase("hello world") => []
-
-"""
-Given a lower and a mixed case word
-It returns an empty list
-"""
-extract_uppercase("hello WoRLD") => []
-
-"""
-Given a lowercase word and an uppercase word with an exclamation mark
-It returns a list with the uppercase word, no exclamation mark
-"""
-extract_uppercase("hello WORLD!") => ["WORLD"]
-
-"""
-Given an empty string
-It returns an empty list
-"""
-extract_uppercase("") => []
+estimate_reading_time("-->string containing 400 words<--") => 2
 
 """
 Given a None value
 It throws an error
 """
-extract_uppercase(None) throws an error
+estimate_reading_time(None) throws an error
 ```
 
 _Encode each example as a test. You can add to the above list as you go._
