@@ -27,6 +27,8 @@ def estimate_reading_time(text):
         ... representing the estimated number of minutes it will take the user
         to read the given text
         ??
+        Let's start with floats at increments of 0.25:
+        A float representing the number of minutes, rounded up to the nearest quarter of a minute (e.g. 5.25)
 
     Side effects:
         This function doesn't print anything or have any other side-effects
@@ -46,19 +48,31 @@ _Make a list of examples of what the function will take and return._
 Given an empty string
 It returns 0
 """
-estimate_reading_time("") => 0
+estimate_reading_time("") => 0.0
 
 """
 Given a string of exactly 200 words
 It returns 1
 """
-estimate_reading_time("-->string containing 200 words with no punctuation<--") => 1
+estimate_reading_time("-->string containing 200 words with no punctuation<--") => 1.0
 
 """
 Given a string of exactly 400 words
 It returns 2
 """
-estimate_reading_time("-->string containing 400 words<--") => 2
+estimate_reading_time("-->string containing 400 words<--") => 2.0
+
+"""
+Given a string of exactly 50 words
+It returns 0.25.
+"""
+estimate_reading_time("-->string containing 50 words<--") => 0.25
+
+"""
+Given a string of exactly 75 words
+It returns 0.5.
+"""
+estimate_reading_time("-->string containing 75 words<--") => 0.5
 
 """
 Given a None value
