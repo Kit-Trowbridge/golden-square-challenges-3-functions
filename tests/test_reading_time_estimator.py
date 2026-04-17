@@ -20,6 +20,24 @@ def test_estimate_reading_time_returns_1_for_200_pure_words():
     result = estimate_reading_time(two_hundred_word_text_pure)
     assert result == 1
 
+"""
+Test 3
+Given a string of exactly 50 pure words
+It returns 0.25.
+"""
+def test_estimate_reading_time_returns_one_quarter_for_50_words():
+    result = estimate_reading_time(fifty_word_text)
+    assert result == 0.25
+
+"""
+Test 4
+Given a string of exactly 100 words containing hyphenated words,
+It returns 0.5
+"""
+def test_estimate_reading_time_returns_one_half_for_100_words_including_hyphens():
+    result = estimate_reading_time(hundred_word_text_with_hyphens)
+    assert result == 0.5
+
 # Text variables:
 
 # Test 2
