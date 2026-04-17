@@ -32,6 +32,8 @@ def estimate_reading_time_in_minutes(text):
         ??
         Let's start with floats at increments of 0.25:
         A float representing the number of minutes, rounded up to the nearest quarter of a minute (e.g. 5.25)
+        
+        Could change to get fraction and convert that to seconds
 
     Side effects:
         This function doesn't print anything or have any other side-effects
