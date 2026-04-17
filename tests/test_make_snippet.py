@@ -1,4 +1,4 @@
-from lib.personal_diary import *
+from lib.make_snippet import *
 
 # given a string of "Hello", make_snippet returns "Hello"
 def test_make_snippet_returns_string_when_given_1_word_string():
