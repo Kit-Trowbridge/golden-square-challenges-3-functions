@@ -20,9 +20,13 @@ def estimate_reading_time(text):
         text: a string containing words (e.g. "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct to Heaven, we were all going direct the other way--in short, the period was so far like the present period, that some of its noisiest authorities insisted on its being received, for good or for evil, in the superlative degree of comparison only.")
 
     Returns: (state the return value and its type)
-        an integer representing the estimated number of minutes it will take the user
+        ??
+        Do we want the nearest integer? (e.g. 5)
+        Or a mix of integers and floats at increments of 0.5 (e.g. 0.5, 1, 1.5, 2)
+        Or do we want to break it down further and do whole minutes and increments of 15 seconds (0.25 minutes), represented in a string ("1 minute, 15 seconds")
+        ... representing the estimated number of minutes it will take the user
         to read the given text
-        (e.g. 5)
+        ??
 
     Side effects:
         This function doesn't print anything or have any other side-effects
