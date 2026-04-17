@@ -1,4 +1,4 @@
 
-def estimate_reading_time(string):
-    words = string.split()
+def estimate_reading_time(text):
+    words = text.split()
     return len(words) / 200
