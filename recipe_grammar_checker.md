@@ -51,6 +51,12 @@ It returns True
 check_grammar("Hello, world!") # => True
 
 """
+Given a single sentence text starting with a capital letter and without a sentence-ending punctuation mark
+It returns False
+"""
+check_grammar("Hello, world") # => False
+
+"""
 Given a string of words with no capital letters or sentence ending punctuation
 It returns False
 """
