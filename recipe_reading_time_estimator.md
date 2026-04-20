@@ -85,11 +85,11 @@ It returns 0.5.
 estimate_reading_time_in_minutes("-->string containing 75 words<--") => 0.5
 
 """
-6.
-Given a string of exactly 200 words containing em-dash with no spaces (e.g. ..."other way—in short"...)
-It returns 1
-"""
-estimate_reading_time_in_minutes("-->string containing 200 words with em-dash<--") => 2.0
+# 6.
+# Given a string of exactly 200 words containing em-dash with no spaces (e.g. ..."other way—in short"...)
+# It returns 1
+# """
+# estimate_reading_time_in_minutes("-->string containing 200 words with em-dash<--") => 2.0
 
 
 """

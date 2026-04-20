@@ -2,8 +2,10 @@
 def estimate_reading_time_in_minutes(text):
     words = text.split()
     # 50 is 0.25 of 200
-    if len(words) % 50 == 0:
-        return len(words) / 200
+    number_of_words = len(words)
+    if number_of_words % 50 == 0:
+        return number_of_words / 200
     else:
-        # need a way to round up to the nearest 0.25
-        pass
+        import math
+        # rounds up to the nearest 0.25 minutes
+        return math.ceil(number_of_words / 200 * 4) / 4
